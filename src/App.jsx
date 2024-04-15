@@ -1,10 +1,10 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import SettingsScreen from "./screens/SettingsScreen";
-import CourseListScreen from "./screens/CourseList";
-import ProfileScreen from "./screens/Profile";
-import Ionicons from "@expo/vector-icons/Ionicons";
-import { AboutStack } from "./AppStack";
+import SettingsScreen from "./components/SettingsScreen";
+import Icon from 'react-native-vector-icons/Ionicons';
+import { AboutStack } from "./Stacks/AppStack";
+import CourseListScreen from "./components/CourseList";
+import ProfileScreen from "./components/Profile";
 
 const Tab = createBottomTabNavigator();
 
@@ -24,7 +24,7 @@ export default function App() {
           component={ProfileScreen}
           options={{
             tabBarLabel: "My Profile",
-            tabBarIcon: () => <Ionicons name={"person"} size={20} />,
+            tabBarIcon: () => <Icon name='person' size={20} />,
             tabBarBadge: 3,
           }}
         />
