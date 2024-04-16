@@ -21,7 +21,9 @@ export default function App() {
           tabBarActiveTintColor: "#333",
         }}
       >
-        <Tab.Screen name="Course List" component={CourseListScreen} 
+        <Tab.Screen 
+          name="Course List"
+          component={CourseListScreen} 
           options={{
             tabBarIcon: () => <Icon name='list-circle' size={20}/>
           }}
@@ -35,7 +37,9 @@ export default function App() {
             //tabBarBadge: 3,
           }}
         />
-        <Tab.Screen name="Settings" component={SettingsScreen}
+        <Tab.Screen 
+          name="Settings" 
+          component={SettingsScreen}
           options={{
             tabBarIcon: () => <Icon name='settings' size={20}/>
           }}
