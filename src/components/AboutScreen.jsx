@@ -13,13 +13,13 @@ export default function AboutScreen({ navigation, route }) {
     <View style={styles.container}>
       <Text style={styles.text}>About {name}</Text>
       <Button
-        title="Update the name"
-        onPress={() => navigation.setParams({ name: "Codevolution" })}
+        title="Alterar o nome"
+        onPress={() => navigation.setParams({ name: "Nome novo" })}
       />
       <Button
-        title="Go back with data"
+        title="Voltar com os dados"
         onPress={() => {
-          navigation.navigate("Home", { result: "Data from About" });
+          navigation.navigate("Home", { result: "Dados" });
         }}
       />
     </View>

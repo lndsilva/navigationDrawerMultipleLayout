@@ -9,13 +9,13 @@ const Drawer = createDrawerNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Dashboard">
+      <Drawer.Navigator initialRouteName="Settings">
         <Drawer.Screen
           name="Dashboard"
           component={DashboardScreen}
           options={{
-            title: "My dashboard",
-            drawerLabel: "Dashboard label",
+            title: "Dashboard",
+            drawerLabel: "Dashboard",
             drawerActiveTintColor: "#333",
             drawerActiveBackgroundColor: "lightblue",
             drawerContentStyle: {
